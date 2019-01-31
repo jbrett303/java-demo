@@ -28,7 +28,7 @@ public class Main {
 		// exercise 3
 		Circle circle = new Circle("greg",5);
 		System.out.println(circle.getArea());
-		Rectangle rectangle = new Rectangle("bob",4, 5);
+		new Rectangle("bob",4, 5);
 		System.out.println(circle.getArea());
 
 		Map shapeMap = ShapeStore.getShapeMap();

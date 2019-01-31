@@ -16,9 +16,9 @@ class RectangleTest {
 	@Test
 	void getQuantity() {
 		int base = Rectangle.getQuantity();
-		Rectangle rectangle = new Rectangle("Ricky",5, 10);
+		new Rectangle("Ricky",5, 10);
 		assertEquals(base + 1, Rectangle.getQuantity());
-		Rectangle rectangle2 = new Rectangle("Roland" ,5, 10);
+		new Rectangle("Roland" ,5, 10);
 		assertEquals(base + 2, Rectangle.getQuantity());
 	}
 }

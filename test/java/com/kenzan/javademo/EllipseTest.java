@@ -16,9 +16,9 @@ class EllipseTest {
 	@Test
 	void getQuantity() {
 		int base = Ellipse.getQuantity();
-		Ellipse ellipse = new Ellipse("Eggbert",5, 10);
+		new Ellipse("Eggbert",5, 10);
 		assertEquals(base + 1, Ellipse.getQuantity());
-		Ellipse ellipse2 = new Ellipse("Embry",5, 10);
+		new Ellipse("Embry",5, 10);
 		assertEquals(base + 2, Ellipse.getQuantity());
 	}
 }
