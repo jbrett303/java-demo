@@ -1,4 +1,4 @@
-package com.circlesandrandommaths.demo;
+package com.kenzan.javademo;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

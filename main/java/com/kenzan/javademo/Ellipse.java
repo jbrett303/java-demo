@@ -1,4 +1,4 @@
-package com.circlesandrandommaths.demo;
+package com.kenzan.javademo;
 
 import static java.lang.Math.PI;
 

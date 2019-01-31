@@ -1,9 +1,10 @@
-package com.circlesandrandommaths.demo;
+package com.kenzan.javademo;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public abstract class ShapeStore {
 
@@ -22,6 +23,17 @@ public abstract class ShapeStore {
 
 	public static List getShapeList() {
 		return shapeList;
+	}
+
+	public static List getShapeList(String shape) {
+
+		return (List)shapeList.stream()
+				.filter(
+						i -> 0 == i.getClass()
+								.getSimpleName()
+								.compareTo(shape)
+				)
+				.collect(Collectors.toList());
 	}
 
 	public static Shapes getShapeByName(String name){

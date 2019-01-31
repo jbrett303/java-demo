@@ -1,4 +1,4 @@
-package com.circlesandrandommaths.demo;
+package com.kenzan.javademo;
 
 import java.util.*;
 
@@ -41,8 +41,7 @@ public class Main {
 		Collections.sort(shapeList);
 		System.out.println(shapeList);
 
-
-
+		System.out.println("test " + ShapeStore.getShapeList("Circle"));
 
 
 		System.out.println("There are " + Circle.getQuantity() +  " circles");

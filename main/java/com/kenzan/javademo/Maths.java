@@ -1,4 +1,4 @@
-package com.circlesandrandommaths.demo;
+package com.kenzan.javademo;
 
 abstract class Maths {
 

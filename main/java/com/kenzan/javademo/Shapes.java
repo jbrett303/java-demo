@@ -1,6 +1,4 @@
-package com.circlesandrandommaths.demo;
-
-import java.awt.*;
+package com.kenzan.javademo;
 
 public abstract class Shapes implements  Comparable<Shapes>{
 

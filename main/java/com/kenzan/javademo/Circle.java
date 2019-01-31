@@ -1,4 +1,4 @@
-package com.circlesandrandommaths.demo;
+package com.kenzan.javademo;
 
 import static java.lang.Math.PI;
 
@@ -24,6 +24,11 @@ public class Circle extends Shapes implements flatShape {
 		quantity++;
 	}
 
+
+	@Deprecated
+	public boolean isMagic() {
+		return true;
+	}
 
 	/**
 	 * getArea will return the area of the circle in whatever dimension type it was instantiated with.
