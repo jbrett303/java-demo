@@ -19,9 +19,9 @@ public class Ellipse extends Shapes implements flatShape {
 		super.checkIfNameExists(name);
 		this.radiusOne = radiusOne;
 		this.radiusTwo = radiusTwo;
-		super.name = name;
-		super.area = PI * radiusOne * radiusTwo;
-		super.perimeter = getPerimeter(radiusOne, radiusTwo);
+		this.name = name;
+		this.area = PI * radiusOne * radiusTwo;
+		this.perimeter = getPerimeter(radiusOne, radiusTwo);
 		ShapeStore.storeShape(this);
 		super.incrementQty();
 		quantity++;

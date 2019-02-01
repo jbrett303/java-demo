@@ -2,11 +2,11 @@ package com.kenzan.javademo;
 
 public abstract class Shapes implements  Comparable<Shapes>{
 
-	protected double area;
-	protected double perimeter;
-	protected String name;
+	double area;
+	double perimeter;
+	String name;
 
-	protected static int quantity;
+	static int quantity;
 
 	protected static void checkIfNameExists(String name){
 		if (ShapeStore.getShapeByName(name) == null){
@@ -18,7 +18,7 @@ public abstract class Shapes implements  Comparable<Shapes>{
 		);
 	}
 
-	protected static void incrementQty(){
+	static void incrementQty(){
 		 quantity++;
 	}
 

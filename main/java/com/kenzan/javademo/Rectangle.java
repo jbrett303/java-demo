@@ -16,9 +16,9 @@ public class Rectangle extends Shapes implements flatShape {
 		super.checkIfNameExists(name);
 		this.length = length;
 		this.width = width;
-		super.name = name;
-		super.area = length * width;
-		super.perimeter = (length + width) * 2;
+		this.name = name;
+		this.area = length * width;
+		this.perimeter = (length + width) * 2;
 		ShapeStore.storeShape(this);
 		super.incrementQty();
 		quantity++;

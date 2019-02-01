@@ -16,9 +16,9 @@ public class Circle extends Shapes implements flatShape {
 	public Circle(String name, double radius){
 		super.checkIfNameExists(name);
 		this.radius = radius;
-		super.area = PI * (radius * radius);
-		super.perimeter = PI * (radius + radius);
-		super.name = name;
+		this.area = PI * (radius * radius);
+		this.perimeter = PI * (radius + radius);
+		this.name = name;
 		ShapeStore.storeShape(this);
 		super.incrementQty();
 		quantity++;
