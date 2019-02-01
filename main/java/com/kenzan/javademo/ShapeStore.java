@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public abstract class ShapeStore {
 
 	private static Map <String, Shapes> shapeMap = new HashMap<String, Shapes>();
-	private static List shapeList = new ArrayList();
+	private static List<Shapes> shapeList = new ArrayList<>();
 
 
 	public static void storeShape(Shapes shape){
@@ -17,17 +17,17 @@ public abstract class ShapeStore {
 		shapeList.add(shape);
 	}
 
-	public static Map getShapeMap() {
+	public static Map<String, Shapes> getShapeMap() {
 		return shapeMap;
 	}
 
-	public static List getShapeList() {
+	public static List<Shapes> getShapeList() {
 		return shapeList;
 	}
 
-	public static List getShapeList(String shape) {
+	public static List<Shapes> getShapeList(String shape) {
 
-		return (List)shapeList.stream()
+		return (List<Shapes>)shapeList.stream()
 				.filter(
 						i -> 0 == i.getClass()
 								.getSimpleName()

@@ -31,12 +31,12 @@ public class Main {
 		new Rectangle("bob",4, 5);
 		System.out.println(circle.getArea());
 
-		Map shapeMap = ShapeStore.getShapeMap();
+		Map<String, Shapes> shapeMap = ShapeStore.getShapeMap();
 		System.out.println(shapeMap);
 		TreeMap<String, Shapes> sortedShapeMap = new TreeMap<>(shapeMap);
 		System.out.println(sortedShapeMap);
 
-		List shapeList = ShapeStore.getShapeList();
+		List<Shapes> shapeList = ShapeStore.getShapeList();
 		System.out.println(shapeList);
 		Collections.sort(shapeList);
 		System.out.println(shapeList);
