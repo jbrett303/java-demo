@@ -2,9 +2,9 @@ package com.kenzan.javademo.shapes;
 
 public abstract class Shapes implements  Comparable<Shapes>{
 
-	double area;
-	double perimeter;
-	String name;
+	public String name;
+	public double area;
+	public double perimeter;
 
 	static int quantity;
 
@@ -12,7 +12,7 @@ public abstract class Shapes implements  Comparable<Shapes>{
 		if (ShapeStore.getShapeByName(name) == null){
 			return;
 		}else throw new IllegalArgumentException(
-				"Name already exists.  " +
+				"Name: " + name + " already exists.  " +
 						"Shapes, like snowflakes are unique, " +
 						"except when their not so they might as well have unique names"
 		);

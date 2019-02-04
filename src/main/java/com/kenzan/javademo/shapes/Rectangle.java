@@ -4,8 +4,8 @@ public class Rectangle extends Shapes implements flatShape {
 
 	private static int quantity;
 
-	double length;
-	double width;
+	public double length;
+	public double width;
 
 	/**
 	 * Rectangle did you know that all squares are rectangles, but not all rectangles are squares?  I did.

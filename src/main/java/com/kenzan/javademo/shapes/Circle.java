@@ -6,7 +6,7 @@ public class Circle extends Shapes implements flatShape {
 
 	private static int quantity;
 
-	double radius;
+	public double radius;
 
 	/**
 	 * circles are round, so round. They've been used to visualize infinity, but

@@ -6,8 +6,8 @@ public class Ellipse extends Shapes implements flatShape {
 
 	private static int quantity;
 
-	double radiusOne;
-	double radiusTwo;
+	public double radiusOne;
+	public double radiusTwo;
 
 	/**
 	 * Ellipse instantiates a squished circle aka ellipse
