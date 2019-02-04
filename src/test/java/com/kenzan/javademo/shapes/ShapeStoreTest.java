@@ -6,7 +6,7 @@ import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.contains;
+import static org.hamcrest.Matchers.hasItem;
 
 import java.util.Map;
 
@@ -23,6 +23,13 @@ class ShapeStoreTest {
     void getShapeList() {
         Rectangle rectangle = new Rectangle("Rodolpho",5, 10);
         List<Shapes> shapeList = ShapeStore.getShapeList();
-        assertThat(shapeList, contains(rectangle));
+        assertThat(shapeList, hasItem(rectangle));
+    }
+
+    @Test
+    void getShapeListByShape() {
+        Rectangle rectangle = new Rectangle("Roberta",5, 10);
+        List<Shapes> shapeList = ShapeStore.getShapeList("Rectangle");
+        assertThat(shapeList, hasItem(rectangle));
     }
 }
