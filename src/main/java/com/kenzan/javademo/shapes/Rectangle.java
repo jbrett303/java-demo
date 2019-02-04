@@ -1,4 +1,4 @@
-package com.kenzan.javademo;
+package com.kenzan.javademo.shapes;
 
 public class Rectangle extends Shapes implements flatShape {
 

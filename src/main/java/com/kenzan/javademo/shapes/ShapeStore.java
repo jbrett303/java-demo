@@ -1,4 +1,4 @@
-package com.kenzan.javademo;
+package com.kenzan.javademo.shapes;
 
 import java.util.ArrayList;
 import java.util.HashMap;

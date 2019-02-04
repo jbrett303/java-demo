@@ -1,4 +1,4 @@
-package com.kenzan.javademo;
+package com.kenzan.javademo.shapes;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,7 +1,8 @@
-package com.kenzan.javademo;
+package com.kenzan.javademo.mathsTest;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import com.kenzan.javademo.maths.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 

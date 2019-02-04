@@ -1,4 +1,4 @@
-package com.kenzan.javademo;
+package com.kenzan.javademo.shapes;
 
 import org.junit.jupiter.api.Test;
 
@@ -10,9 +10,9 @@ class ShapesTest {
 	void incrementAndGetQty() {
 		int base = Shapes.getQuantity();
 		new Circle("Collin",5);
-		assertEquals(base + 1, Circle.getQuantity());
+		assertEquals(base + 1, Shapes.getQuantity());
 		new Circle("Catalina",5);
-		assertEquals(base + 2, Circle.getQuantity());
+		assertEquals(base + 2, Shapes.getQuantity());
 	}
 
 	@Test

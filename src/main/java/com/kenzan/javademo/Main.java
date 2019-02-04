@@ -1,6 +1,8 @@
 package com.kenzan.javademo;
 
 import java.util.*;
+import com.kenzan.javademo.shapes.*;
+import com.kenzan.javademo.maths.Maths;
 
 public class Main {
 

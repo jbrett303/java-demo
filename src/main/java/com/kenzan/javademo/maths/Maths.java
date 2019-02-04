@@ -1,6 +1,6 @@
-package com.kenzan.javademo;
+package com.kenzan.javademo.maths;
 
-abstract class Maths {
+public abstract class Maths {
 
 	/**
 	 * sum_a_bunches
@@ -9,7 +9,7 @@ abstract class Maths {
 	 * @param numbers an array of ints
 	 * @return int sum of all ints in array
 	 */
-	static int sum_a_bunches(int[] numbers) {
+	public static int sum_a_bunches(int[] numbers) {
 		int running_total = 0;
 		for(int value: numbers){
 			running_total += value;
@@ -24,7 +24,7 @@ abstract class Maths {
 	 * @param numbers an array of ints
 	 * @return float average of an array of ints
 	 */
-	static float average(int[] numbers) {
+	public static float average(int[] numbers) {
 		int the_sum = sum_a_bunches(numbers);
 		return the_sum / (float) numbers.length;
 	}
@@ -37,7 +37,7 @@ abstract class Maths {
 	 * @param number int
 	 * @return int the factorial of an non-negative integer
 	 */
-	static int factorial( int number ) {
+	public static int factorial( int number ) {
 		if ( number < 0 ) {
 			throw new IllegalArgumentException("Number must be non-negative");
 		}
@@ -56,7 +56,7 @@ abstract class Maths {
 	 * @param number int
 	 * @return int the fibonacci of an non-negative integer
 	 */
-	static int fibonacci( int number ) {
+	public static int fibonacci( int number ) {
 		if ( number < 0 ) {
 			throw new IllegalArgumentException("Number must be non-negative");
 		}
