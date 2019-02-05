@@ -2,6 +2,8 @@ package com.kenzan.javademo.controller.shapes;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestBody;
 import com.kenzan.javademo.shapes.Shapes;
 import com.kenzan.javademo.shapes.ShapeStore;
 import com.kenzan.javademo.shapes.Circle;
@@ -12,8 +14,6 @@ import java.util.List;
 import javax.validation.Valid;
 
 import java.util.ArrayList;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestBody;
 
 
 
