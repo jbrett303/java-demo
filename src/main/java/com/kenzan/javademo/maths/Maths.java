@@ -1,6 +1,10 @@
 package com.kenzan.javademo.maths;
 
-public abstract class Maths {
+import java.util.List;
+
+public class Maths {
+
+	private Maths(){}
 
 	/**
 	 * sum_a_bunches
@@ -9,7 +13,7 @@ public abstract class Maths {
 	 * @param numbers an array of ints
 	 * @return int sum of all ints in array
 	 */
-	public static int sum_a_bunches(int[] numbers) {
+	public static int sum_a_bunches(List<Integer> numbers) {
 		int running_total = 0;
 		for(int value: numbers){
 			running_total += value;
@@ -24,9 +28,9 @@ public abstract class Maths {
 	 * @param numbers an array of ints
 	 * @return float average of an array of ints
 	 */
-	public static float average(int[] numbers) {
+	public static float average(List<Integer> numbers) {
 		int the_sum = sum_a_bunches(numbers);
-		return the_sum / (float) numbers.length;
+		return the_sum / (float) numbers.size();
 	}
 
 

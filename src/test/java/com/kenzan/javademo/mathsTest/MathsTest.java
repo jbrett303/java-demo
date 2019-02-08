@@ -6,14 +6,17 @@ import com.kenzan.javademo.maths.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.List;
+import java.util.ArrayList;
+
 class MathsTest {
 
-	static int[] hundred = new int[100];
+	static List<Integer> hundred = new ArrayList<Integer>();
 
 	@BeforeAll
 	static void setup() {
 		for (int i = 0; i <= 99; i++){
-			hundred[i] = i + 1;
+			hundred.add(i + 1);
 		}
 	}
 
