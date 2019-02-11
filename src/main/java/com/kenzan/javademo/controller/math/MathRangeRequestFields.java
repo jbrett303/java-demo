@@ -6,6 +6,9 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.PositiveOrZero;
 import javax.validation.constraints.Digits;
 
+/**
+ * Class to validate input using java bean validation.  Expects a list of integers in field 'range' in a json object.
+ */
 public class MathRangeRequestFields{
     @NotEmpty(message = "Range must not be empty")
     private ArrayList<@Digits(fraction = 0, integer = 7, 

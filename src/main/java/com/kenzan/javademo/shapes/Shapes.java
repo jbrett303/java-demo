@@ -8,6 +8,11 @@ public abstract class Shapes implements  Comparable<Shapes>{
 
 	static int quantity;
 
+	/**
+	 * Throws exception when a shape name is submitted that is already in use.
+	 * @param name string, the name of a shape
+	 * @throws IllegalArgumentException 
+	 */
 	protected static void checkIfNameExists(String name){
 		if (ShapeStore.getShapeByName(name) == null){
 			return;
@@ -18,10 +23,16 @@ public abstract class Shapes implements  Comparable<Shapes>{
 		);
 	}
 
+	/**
+	 * Increments the static Shapes quantity field.  All subclassed shapes should increment this in their constructor.
+	 */
 	static void incrementQty(){
 		 quantity++;
 	}
 
+	/**
+	 * @return quantity of instatiated shapes in the app
+	 */
 	public static int getQuantity(){
 		return quantity;
 	}

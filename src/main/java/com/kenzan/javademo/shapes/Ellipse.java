@@ -11,7 +11,7 @@ public class Ellipse extends Shapes implements flatShape {
 
 	/**
 	 * Ellipse instantiates a squished circle aka ellipse
-	 * 
+	 * @param name of this particular ellipse.  Names are enforced unique across all shapes.
 	 * @param radiusOne one radius of the ellipse
 	 * @param radiusTwo the other radius of the ellipse
 	 */

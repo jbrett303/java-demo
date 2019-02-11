@@ -9,8 +9,9 @@ public class Rectangle extends Shapes implements flatShape {
 
 	/**
 	 * Rectangle did you know that all squares are rectangles, but not all rectangles are squares?  I did.
+	 * @param name of this particular rectangle.  Names are enforced unique across all shapes.
 	 * @param length of one side of rectangle
-	 * @param width of the other side of rectangle
+	 * @param width of the perpendicular side of rectangle
 	 */
 	public Rectangle(String name, double length, double width){
 		super.checkIfNameExists(name);
@@ -34,7 +35,7 @@ public class Rectangle extends Shapes implements flatShape {
 
 	/**
 	 * getQuantity returns the quantity of instantiated rectangles in the app
-	 * @return int representing the amount of instantiated rectangles (in this app) not like, everywhere.
+	 * @return int representing the amount of instantiated rectangles (in this app), not like, everywhere.
 	 */
 	public static int getQuantity(){
 		return quantity;

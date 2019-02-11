@@ -7,7 +7,9 @@ import org.springframework.http.HttpStatus;
 
 public abstract class Controller {
     
-    
+    /**
+     * Handles the format of validation errors on extended controller classes.
+     */
     protected void throwFieldError(FieldError error){
         String rejectedValue;
         try {
